@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Bookstore</title>
+<h1>🌱 Bookloom</h1>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eaeaea;
+}
+
+header {
+    background: #7206b5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #0b28ea;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 8px 15px;
+    background: #fdfafd;
+    color: rgb(15, 3, 3);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #7a741a;
+}
+
+.banner {
+    background-image: url("https://images.unsplash.com/photo-1524578271613-d550eacf6090");
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e8782d;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.book-section {
+    background: #fff6dc;  
+    padding: 30px;
+}
+
+.container {
+    max-width: 1300px; 
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.book {
+    background: #f5f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.book p {
+    font-size: 15px;
+    color: #a809b0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #fdeb26;
+    color: rgb(11, 12, 12);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: #7a741a;
+}
+
+footer {
+    background: #928e6c;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .banner {
+        font-size: 22px;
+        height: 140px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Bookstore</h1>
+    <p>Your gateway to knowledge and imagination</p>
+</header>
+
+<div class="animated-line"></div>
+
+<style>
+
+.animated-line {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        #ff9800,
+        #e91e63,
+        #2196f3,
+        #4caf50,
+        #ff9800
+    );
+    background-size: 300% 100%;
+    animation: moveLine 4s linear infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 300% 50%;
+    }
+}
+</style>
+
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Books</a>
+    <a href="#">Categories</a>
+    <a href="#">Contact</a>
+</nav>
+
+
+<div class="banner"></div>
+
+<div class="moving-text-box">
+    <div class="moving-text">
+        📚 Welcome to 🌱 Bookloom – Best Online Bookstore | Flat 20% OFF on Best Sellers | Free Delivery Available 📚
+    </div>
+</div>
+   
+<style>
+
+.moving-text-box {
+    width: 100%;
+    overflow: hidden;
+    background: #e3fcfb;
+    padding: 10px 0;
+}
+
+
+.moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(0, 40%, 29%);
+    padding-left: 100%;
+    animation: moveText 12s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+</style>
+
+
+<section class="book-section">
+    <div class="container">
+
+        <div class="book">
+            <img src="https://imgs.search.brave.com/IYOBZkCNn54ZXjf79EWgWs0f5sx0nfIf3faSpqJoY1M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9raGFu/bmFwdWJsaXNoZXJz/LmluL2ltYWdlL2Nh/Y2hlL2NhdGFsb2cv/QW5hbHlzaXMlMjBv/ZiUyMFN0cnVjdHVy/ZXMtVm9sJTIwMS0y/MTN4MzI5LmpwZw">
+            <h3>Analysis of Structure</h3>
+            <p>Rs. 399</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+        <div class="book">
+            <img src="https://bookstation.in/cdn/shop/products/11697_front.jpg">
+            <h3>World of Science</h3>
+            <p>Rs. 299</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+        <div class="book">
+            <img src="https://www.bookswagon.com/productimages/mainimages/936/9781529922936.jpg">
+            <h3>Orbital</h3>
+            <p>Rs. 350</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+       <div class="book">
+            <img src="https://d1vhk3ap8w22xn.cloudfront.net/Cat_638950921795122989.png" alt="Book" />
+            <h3>Notebook</h3>
+            <p>Rs. 399</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+        <div class="book">
+            <img src="https://www.bookswagon.com/productimages/mainimages/401/9780099908401.jpg" alt="Book" />
+            <h3>Hemingway</h3>
+            <p>Rs. 299</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+        <div class="book">
+            <img src="https://cdn.shopify.com/s/files/1/0648/3066/9017/products/crosswordonline-books-default-title-the-india-way-strategies-for-an-uncertain-world-paperback-jaishankar-s-40410628096217_360x.jpg?v=1745732374&width=131" alt="Book" />
+            <h3>The Indian Way</h3>
+            <p>Rs. 499</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+        <div class="book">
+            <img src="https://d1vhk3ap8w22xn.cloudfront.net/Cat_638950921036013068.png" alt="Book" />
+            <h3>Activity Book</h3>
+            <p>Rs. 350</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+        <div class="book">
+            <img src="https://onlinecollegestreet.com/wp-content/uploads/2025/09/apj-abdul-kalam-wing-of-fire.jpg" alt="Book" />
+            <h3>Wings of fire by APJ Abdul Kalam</h3>
+            <p>Rs. 499</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+        <div class="book">
+            <img src="https://onlinecollegestreet.com/wp-content/uploads/2025/11/Broken-Republic.jpg" alt="Book" />
+            <h3>Broken-Republic</h3>
+            <p>Rs. 499</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div>
+
+        <div class="book">
+            <img src="https://cdn.shopify.com/s/files/1/0648/3066/9017/products/crosswordonline-books-default-title-leadership-mastery-hardcover-dale-carnegie-training-hardcover-dale-carnegie-training-hardcover-dale-carnegie-training-40421882298585_360x.jpg?v=1745699090&width=131" alt="Book" />
+            <h3>Leadership Mastery</h3>
+            <p>Rs. 499</p>
+            <a class="btn" href="#">Add to cart</a>
+        </div> 
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Online Bookstore. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
